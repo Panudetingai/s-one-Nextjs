@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# S-ONE NextJS Test Project
 
-## Getting Started
+# โปรเจคทดสอบ S-ONE ด้วย NextJS
 
-First, run the development server:
+โปรเจคนี้เกี่ยวกับการพัฒนาส่วนหน้า (Frontend) ของเว็บไซต์ร้านรถยนต์แบบ Responsive ตามดีไซน์ที่กำหนดไว้
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ความต้องการของโปรเจค
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- แปลงโครงสร้างเดิมที่ใช้ HTML Table ให้เป็นดีไซน์ที่รองรับการแสดงผลทุกขนาดหน้าจอ (Responsive)
+- พัฒนาด้วยเทคโนโลยีเว็บสมัยใหม่
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## เทคโนโลยีที่ใช้
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: Next.js 14
+- **การจัดการสไตล์**: Tailwind CSS
+- **การจัดการสถานะ**: React State
+- **ฟอนต์**: Next/font with Geist
+- **สภาพแวดล้อมการพัฒนา**: Node.js, Bun
 
-## Learn More
+## การติดตั้ง
 
-To learn more about Next.js, take a look at the following resources:
+1. โคลนโปรเจค:
+    ```bash
+    git clone [repository-url]
+    cd s-one-nextjs
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. ติดตั้งแพ็คเกจที่จำเป็น:
+    ```bash
+    npm install
+    # หรือ
+    yarn install
+    # หรือ
+    pnpm install
+    # หรือ
+    bun install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. เริ่มต้นเซิร์ฟเวอร์สำหรับพัฒนา:
+    ```bash
+    npm run dev
+    # หรือ
+    yarn dev
+    # หรือ
+    pnpm dev
+    # หรือ
+    bun dev
+    ```
 
-## Deploy on Vercel
+4. เปิด [http://localhost:3000](http://localhost:3000) ในเบราว์เซอร์เพื่อดูผลลัพธ์
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## เริ่มต้นการพัฒนา
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+คุณสามารถเริ่มแก้ไขหน้าเว็บโดยการแก้ไขไฟล์ `app/page.tsx` โดยหน้าเว็บจะอัปเดตอัตโนมัติเมื่อคุณแก้ไขไฟล์
+
+โปรเจคนี้ใช้ [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) เพื่อโหลดและปรับแต่งฟอนต์ [Geist](https://vercel.com/font) ซึ่งเป็นฟอนต์ตระกูลใหม่จาก Vercel
+
+## เรียนรู้เพิ่มเติม
+
+เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับ Next.js ลองดูแหล่งข้อมูลต่อไปนี้:
+
+- [เอกสาร Next.js](https://nextjs.org/docs) - เรียนรู้เกี่ยวกับฟีเจอร์และ API ของ Next.js
+- [เรียนรู้ Next.js](https://nextjs.org/learn) - บทเรียน Next.js แบบโต้ตอบ
+
+คุณสามารถตรวจสอบ [GitHub repository ของ Next.js](https://github.com/vercel/next.js) - ข้อเสนอแนะและการมีส่วนร่วมของคุณเป็นที่ยินดี!
